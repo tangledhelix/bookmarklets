@@ -9,9 +9,7 @@ I wrote this because I found myself frequently counting the number of items in
 my Read Later folder, which was sent to my Kindle weekly in batches of 20
 or fewer articles.
 
-Drag this: [Count Instapapers][count_instapapers]
-
-[count_instapapers]: javascript:var%20count%20=%200;var%20divs%20=%20document.getElementsByTagName(%27div%27);for%20(var%20i%20=%200;%20i%20<%20divs.length;%20i++)%20{if%20(divs[i].className%20===%20%27titleRow%27)%20{count++;}}alert(count);
+Drag this: [Count Instapapers](javascript:var%20count%20=%200;var%20divs%20=%20document.getElementsByTagName%28%27div%27%29;for%20%28var%20i%20=%200;%20i%20<%20divs.length;%20i++%29%20{if%20%28divs[i].className%20===%20%27titleRow%27%29%20{count++;}}alert%28count);
 
 ## goodreads\_amazon\_lookup ##
 
@@ -62,7 +60,7 @@ When you encounter a YouTube Mobile page that shows up as a generic "front
 page", click the bookmarklet, and it should load the original video you had
 saved.
 
-Drag this: [Translate YouTube Mobile][translate_youtube_mobile]
+Drag this: [Translate YouTube Mobile]
 
-[translate_youtube_mobile]: javascript://url%20=%20document.location.href;re%20=%20/v%253D([^%25%26]+)/;if%20(%20re.test(%20url%20)%20)%20{location%20=%20%27http://youtube.com/watch?v=%27%20+%20RegExp.$1;}%20else%20{alert(%20%27Unrecognized%20URL%20format%27%20);}
+javascript://url%20=%20document.location.href;re%20=%20/v%253D([^%25%26]+)/;if%20(%20re.test(%20url%20)%20)%20{location%20=%20%27http://youtube.com/watch?v=%27%20+%20RegExp.$1;}%20else%20{alert(%20%27Unrecognized%20URL%20format%27%20);}
 

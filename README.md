@@ -9,7 +9,9 @@ I wrote this because I found myself frequently counting the number of items in
 my Read Later folder, which was sent to my Kindle weekly in batches of 20
 or fewer articles.
 
-Drag this: <a href="javascript:var%20count%20=%200;var%20divs%20=%20document.getElementsByTagName(%27div%27);for%20(var%20i%20=%200;%20i%20<%20divs.length;%20i++)%20{if%20(divs[i].className%20===%20%27titleRow%27)%20{count++;}}alert(count);">Count Instapapers</a>
+Drag this: [Count Instapapers][count_instapapers]
+
+[count_instapapers]: javascript:var%20count%20=%200;var%20divs%20=%20document.getElementsByTagName(%27div%27);for%20(var%20i%20=%200;%20i%20<%20divs.length;%20i++)%20{if%20(divs[i].className%20===%20%27titleRow%27)%20{count++;}}alert(count);
 
 ## goodreads\_amazon\_lookup ##
 
@@ -22,7 +24,9 @@ As far as I can tell, Amazon uses a book's ISBN as its ASIN in the case of
 print books. So far in my testing, this bookmarklet works for print books as
 well. YMMV.
 
-Drag this: <a href="javascript:var%20prefix%20=%20%27http://www.goodreads.com/search/search?search_type=books&search%5Bquery%5D=%27;var%20url%20=%20document.location.href;var%20dp_re%20=%20/\/dp\//;var%20gp_re%20=%20/\/gp\/product\//;if%20(%20dp_re.test(%20url%20)%20)%20{location%20=%20url.replace(%20/^http:\/\/[^\/]+.*\/dp\/([^\/]+)\/.*$/,%20prefix%20+%20%22$1%22%20);}%20else%20if%20(%20gp_re.test(%20url%20)%20)%20{location%20=%20url.replace(%20/^http:\/\/[^\/]+.*\/gp\/product\/([^\/]+)\/.*$/,%20prefix%20+%20%22$1%22%20);}%20else%20{alert(%20%27Unrecognized%20URL%20format%27%20);}">Look up on Goodreads</a>
+Drag this: [Look up on Goodreads][goodreads_amazon_lookup]
+
+[goodreads_amazon_lookup]: javascript:var%20prefix%20=%20%27http://www.goodreads.com/search/search?search_type=books&search%5Bquery%5D=%27;var%20url%20=%20document.location.href;var%20dp_re%20=%20/\/dp\//;var%20gp_re%20=%20/\/gp\/product\//;if%20(%20dp_re.test(%20url%20)%20)%20{location%20=%20url.replace(%20/^http:\/\/[^\/]+.*\/dp\/([^\/]+)\/.*$/,%20prefix%20+%20%22$1%22%20);}%20else%20if%20(%20gp_re.test(%20url%20)%20)%20{location%20=%20url.replace(%20/^http:\/\/[^\/]+.*\/gp\/product\/([^\/]+)\/.*$/,%20prefix%20+%20%22$1%22%20);}%20else%20{alert(%20%27Unrecognized%20URL%20format%27%20);}
 
 ## shorten\_amazon\_url ##
 
@@ -41,7 +45,9 @@ into this:
 When you're on an Amazon product page and want to shorten the URL, click the
 bookmarklet. You'll be taken to the same page, but with a shorter URL.
 
-Drag this: <a href="javascript:var%20url%20=%20document.location.href;var%20dp_re%20=%20/\/dp\//;var%20gp_re%20=%20/\/gp\/product\//;if%20(%20dp_re.test(%20url%20)%20)%20{location%20=%20url.replace(%20/^(http:\/\/[^\/]+).*(\/dp\/[^\/]+)\/.*$/,%20%22$1$2%22%20);}%20else%20if%20(%20gp_re.test(%20url%20)%20)%20{location%20=%20url.replace(%20/^(http:\/\/[^\/]+).*(\/gp\/product\/[^\/]+)\/.*$/,%20%22$1$2%22%20);}%20else%20{alert(%20%27Unrecognized%20URL%20format%27%20);}">Shorten Amazon URL</a>
+Drag this: [Shorten Amazon URL][shorten_amazon_url]
+
+[shorten_amazon_url]: javascript:var%20url%20=%20document.location.href;var%20dp_re%20=%20/\/dp\//;var%20gp_re%20=%20/\/gp\/product\//;if%20(%20dp_re.test(%20url%20)%20)%20{location%20=%20url.replace(%20/^(http:\/\/[^\/]+).*(\/dp\/[^\/]+)\/.*$/,%20%22$1$2%22%20);}%20else%20if%20(%20gp_re.test(%20url%20)%20)%20{location%20=%20url.replace(%20/^(http:\/\/[^\/]+).*(\/gp\/product\/[^\/]+)\/.*$/,%20%22$1$2%22%20);}%20else%20{alert(%20%27Unrecognized%20URL%20format%27%20);}
 
 ## translate\_youtube\_mobile ##
 
@@ -56,5 +62,7 @@ When you encounter a YouTube Mobile page that shows up as a generic "front
 page", click the bookmarklet, and it should load the original video you had
 saved.
 
-Drag this: <a href="javascript://url%20=%20document.location.href;re%20=%20/v%253D([^%25%26]+)/;if%20(%20re.test(%20url%20)%20)%20{location%20=%20%27http://youtube.com/watch?v=%27%20+%20RegExp.$1;}%20else%20{alert(%20%27Unrecognized%20URL%20format%27%20);}">Translate YouTube Mobile</a>
+Drag this: [Translate YouTube Mobile][translate_youtube_mobile]
+
+[translate_youtube_mobile]: javascript://url%20=%20document.location.href;re%20=%20/v%253D([^%25%26]+)/;if%20(%20re.test(%20url%20)%20)%20{location%20=%20%27http://youtube.com/watch?v=%27%20+%20RegExp.$1;}%20else%20{alert(%20%27Unrecognized%20URL%20format%27%20);}
 
